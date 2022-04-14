@@ -6,10 +6,12 @@ public class Menagerie {
 		
 		Chat tom = new Chat(true, "gris", "noir");
 		Chat tommette = new Chat(false, "blanc", "jaune");
+		Chat tommette2 = new Chat(false, "blanc", "jaune");
 		
 		Chien snoopy = new Chien(true, "blanc", 20);
 		Chien droopy = new Chien(true, "noir", 30);
 		Chien snoopette = new Chien(false, "noir", 5);
+
 		
 		Chien enfant;
 		try {
@@ -20,7 +22,12 @@ public class Menagerie {
 			enfant = new Chien(true, "rouge", 42);
 		}
 		
-		System.out.println(enfant.crier());
+		//System.out.println(enfant.crier());
+		
+		Animal winner = Animal.combattre(tommette, tommette2);
+		System.out.println(Animal.equals(winner, tommette) ? "tommette" : "tommette2");
+			
+		
 		
 	}
 	
