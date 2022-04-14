@@ -1,7 +1,6 @@
 package helloWorld;
 
-abstract public class Vivant {
-	
+public interface Vivant {
 	abstract void respirer();
-	
+	int getAirBrasse();
 }

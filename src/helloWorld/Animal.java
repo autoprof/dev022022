@@ -2,7 +2,7 @@ package helloWorld;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-abstract public class Animal extends Vivant {
+abstract public class Animal implements Vivant {
 	
 	int airBrasse = 0;
 	

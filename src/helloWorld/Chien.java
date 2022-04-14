@@ -14,6 +14,10 @@ public class Chien extends Animal {
 		this.lPoil = lPoil;
 	}
 	
+	public int getAirBrasse() {
+		return 0;
+	}
+	
 	public String crier() {
 		return sexe ? "Wouf" : "Waf";
 	}
