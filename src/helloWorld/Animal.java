@@ -2,7 +2,7 @@ package helloWorld;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-abstract public class Animal implements Vivant {
+abstract public class Animal implements Vivant, Vocal {
 	
 	int airBrasse = 0;
 	
@@ -10,7 +10,9 @@ abstract public class Animal implements Vivant {
 		airBrasse++;
 	}
 	
-	abstract String crier();
+	public int getAirBrasse() {
+		return airBrasse;
+	}
 	
 	static Animal combattre(Animal a1, Animal a2) {
 		return ThreadLocalRandom.current().nextInt(0, 2) == 1 ? a1 : a2;

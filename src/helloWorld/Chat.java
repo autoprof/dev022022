@@ -14,10 +14,6 @@ public class Chat extends Animal {
 		this.cYeux = cYeux;
 	}
 	
-	public int getAirBrasse() {
-		return 0;
-	}
-	
 	public String crier() {
 		return "Miaou";
 	}

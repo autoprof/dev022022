@@ -24,11 +24,22 @@ public class Menagerie {
 		
 		//System.out.println(enfant.crier());
 		
-		Animal winner = Animal.combattre(tommette, tommette2);
-		System.out.println(Animal.equals(winner, tommette) ? "tommette" : "tommette2");
-			
+		Animal winner = Animal.combattre(tommette, snoopy);
+		System.out.println(winner == tommette ? "tommette" : "snoopy");
 		
+		faitRespirer(winner);
+		faitCri(winner);
 		
 	}
+	
+	static void faitRespirer(Vivant v) {
+		v.respirer();
+		System.out.println(v.getAirBrasse());
+	}
+	
+	static void faitCri(Vocal v) {
+		System.out.println(v.crier());
+	}
+	
 	
 }
