@@ -6,7 +6,7 @@ import helloWorld.Chat;
 import java.lang.Math;
 import java.util.List;
 
-public class View {
+public class PrintView {
 	
 	static void printHeaders() {
 		System.out.print("| pos |  type   | sexe | poil  |\n");

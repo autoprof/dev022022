@@ -8,8 +8,12 @@ public class Controller {
 	public static void main(String[] args) {
 		Model.populate(115);
 		
-		//View.printAnimals(Model.getData());
+		//PrintView.printAnimals(Model.getData());
+		//System.out.print(StringView.stringifyAnimals(Model.getData()));
+
+		StringBuilder sb = new StringBuilder();
+		StringBuilderView.stringifyAnimals(sb, Model.getData());
+		System.out.print(sb);
 		
-		System.out.print(StringView.printAnimals(Model.getData()));
 	}
 }
