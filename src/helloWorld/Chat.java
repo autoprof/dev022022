@@ -30,5 +30,13 @@ public class Chat extends Animal {
 	static boolean equals(Chat c1, Chat c2) {
 		return c1.sexe == c2.sexe && c1.cPoil == c2.cPoil && c1.cYeux == c2.cYeux;
 	}
+
+	public boolean getSexe() {
+		return sexe;
+	}
+
+	public String getCPoil() {
+		return cPoil;
+	}
 	
 }
